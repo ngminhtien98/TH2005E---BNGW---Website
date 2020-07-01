@@ -1,8 +1,20 @@
-p{
-    text-align: justify;
-    font-family: Arial;
-    font-size: 12;
+body{
+    font-family: "Times New Roman", sans-serif;
     line-height: 1.5;
+    background-image: linear-gradient(to left , lightskyblue, lightsteelblue);
+    border-style: dashed;
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    margin: auto;
+}
+
+p{
+    margin: 20px;
+}
+
+h4 {
+    margin: 20px;
 }
 
 h6{
