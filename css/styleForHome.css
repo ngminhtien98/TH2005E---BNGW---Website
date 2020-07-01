@@ -1,12 +1,51 @@
+
+
+body{
+    background: bisque;
+    font-family: Arial, serif;
+    font-size: 14;
+    line-height: 1.5;
+}
+
 h1{
     color:black;
     font-size: 24px;
+    text-align: center;
 }
 
-{
+
+p{
     color:black;
     font-size:14px;
     line-height:1.5;
     text-align:center;
     font-weight:400;
 }
+
+table, th, td{
+    border:1px solid #868585;
+}
+table{
+    border-collapse:collapse;
+
+}
+th{
+    text-align: center ;
+    padding:20px 40px;
+}
+td{
+    text-align: left;
+    padding:20px 40px;
+}
+table tr:nth-child(odd){
+    background-color:#eee;
+}
+table tr:nth-child(even){
+    background-color:white;
+}
+table tr:nth-child(1){
+    background-color:skyblue;
+}
+
+
+
