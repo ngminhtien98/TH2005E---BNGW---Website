@@ -1,0 +1,43 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    line-height: 1.5;
+    background-image: linear-gradient(to left , lightskyblue, lightsteelblue);
+    border-style: dashed;
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    margin: auto;
+}
+p {
+    margin: 20px;
+}
+
+p:first-child{
+    font-size: 14pt;
+    text-align: right;
+}
+
+img {
+    position: static;
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+.need_indent {
+    text-indent: 95pt;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+    margin: 20px;
+}
+
+hr {
+    border-top: 1px dashed black;
+    position: static;
+    border-bottom: 1px dashed black;
+}
