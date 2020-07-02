@@ -8,6 +8,9 @@ body{
     height: auto;
     text-align: justify;
     margin: auto;
+    text-wrap: normal;
+    word-wrap: break-word;
+
 }
 
 h1{
@@ -30,19 +33,20 @@ border:1px solid #000000;
 }
 
 table{
+    table-layout: fixed;
     border-collapse:collapse;
     alignment: center;
 }
 
 th{
     text-align: center ;
-    padding:20px 40px;
+    padding:5px 5px;
     color: white;
 }
 
 td{
-    text-align: left;
-    padding:20px 40px;
+    text-align: center;
+    padding:5px 5px;
 }
 
 table tr:nth-child(odd){
