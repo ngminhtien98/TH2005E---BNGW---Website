@@ -1,0 +1,64 @@
+body{
+    background-image: url("../img/background/LabS3-Wallpaper.jpg");
+    background-size: cover;
+
+    padding: 15%;
+    width: auto;
+    height: 800px;
+
+    font-family: sans-serif;
+    font-size:14px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#upper {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    background-color: rgb(131, 132, 129);
+}
+
+#inner\ upper {
+    margin-left: 350px;
+    text-align: left;
+}
+
+#inner\ right {
+    margin-left: 350px;
+    text-align: justify;
+}
+
+#right {
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    background-color: white;
+}
+
+
+#left {
+    padding: 30px;
+    background-color: linen;
+    width: 25%;
+    margin-top: -960px;
+    margin-left: 40px;
+}
+
+
+#profile{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div img {
+    width: 10%;
+}
+
+

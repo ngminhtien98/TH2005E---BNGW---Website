@@ -1,0 +1,48 @@
+
+div {
+    float: left;
+
+    /*width: calc(33.33% - 42px);*/
+    width: 33.33%;
+    height: 500px;
+
+    box-sizing: border-box; /*All data inner div class will only be display in div's initialized size*/
+
+    /*Rule: Top->Right->Bottom->Left, if
+    lacking of (any) value, css will use value of the opposite property(s)*/
+
+    /*border: 1px solid red;*/
+    /*Initializing border !*border-bottom: 1px solid red;*/
+    /*border-top: 1px solid red;
+    /*border-right: 1px solid red;
+    /*border-left: 1px solid red;*/
+
+    padding: 20px;
+    /*Initializing distance between data and border*/
+    /*    padding-top: 20px;*/
+    /*    padding-right: 20px;*/
+    /*    padding-bottom: 20px;*/
+    /*    padding-left: 20px;*/
+
+    /*margin: 20px; !*Initializing distance between elements*!*/
+    /*margin-top: 20px;*/
+    /*margin-right: 20px;*/
+    /*margin-bottom: 20px;*/
+    /*margin-left: 20px;*/
+    background-color: black;
+}
+
+    div > div {
+        border: 1px solid red;
+        float:left;
+        width: 100%;
+        height: 500px;
+        box-sizing: border-box;
+        background-color: rgb(107, 238, 107);
+        max-height: 100%;
+    }
+
+    div img {
+        display: block;
+        opacity: 0.5;
+    }
