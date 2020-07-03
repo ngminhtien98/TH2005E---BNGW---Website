@@ -1,6 +1,5 @@
 body{
-    background-image: url("../img/background/LabS3-Wallpaper.jpg");
-    background-size: cover;
+    background-image: linear-gradient(to left , lightskyblue, lightsteelblue);
 
     padding: 15%;
     width: auto;
@@ -21,7 +20,7 @@ h4 {
     text-align: center;
     padding: 5%;
     width: 100%;
-    background-color: rgb(131, 132, 129);
+    background-color: rgb(179, 180, 179);
 }
 
 #inner\ upper {
@@ -44,7 +43,7 @@ h4 {
 
 #left {
     padding: 30px;
-    background-color: linen;
+    background-color: #faefec;
     width: 25%;
     margin-top: -960px;
     margin-left: 40px;
