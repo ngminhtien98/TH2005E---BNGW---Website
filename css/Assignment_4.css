@@ -64,13 +64,14 @@ h3 {
     left: 200px;
     right: 150px;
 
+    overflow: scroll;
+
     display: block;
     max-height: 100%;
     max-width: 100%;
     height: auto;
     width: auto;
     padding: 15px;
-    /*font-size: 100%;*/
 }
 
 #class1\.priceTag, #class2\.priceTag, #class3\.priceTag, #class4\.priceTag, #class5\.priceTag {
