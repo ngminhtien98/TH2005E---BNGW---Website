@@ -52,16 +52,25 @@ h3 {
 
 #class1\.picture, #class2\.picture, #class3\.picture, #class4\.picture, #class5\.picture {
     float: left;
-    height: 200px;
-    width: 200px;
+    display: block;
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
 }
 
 #class1\.content, #class2\.content, #class3\.content, #class4\.content, #class5\.content {
     position: absolute;
     left: 200px;
     right: 150px;
-    height: 100%;
+
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
     padding: 15px;
+    /*font-size: 100%;*/
 }
 
 #class1\.priceTag, #class2\.priceTag, #class3\.priceTag, #class4\.priceTag, #class5\.priceTag {
