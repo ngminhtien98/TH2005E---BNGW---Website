@@ -34,7 +34,8 @@ h3 {
     background-color: rgb(242, 242, 242);
     border: 1px solid darkgrey;
     position: relative;
-    height: 200px;
+    min-height: 250px;
+    height: auto;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -43,7 +44,8 @@ h3 {
     background-color: rgb(255, 255, 255);
     border: 1px solid darkgrey;
     position: relative;
-    height: 200px;
+    min-height: 250px;
+    height: auto;
     width: 100%;
     margin-bottom: 15px;
 
@@ -53,8 +55,8 @@ h3 {
 #class1\.picture, #class2\.picture, #class3\.picture, #class4\.picture, #class5\.picture {
     float: left;
     display: block;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 250px;
+    max-width: 250px;
     height: auto;
     width: auto;
 }
@@ -64,14 +66,16 @@ h3 {
     left: 200px;
     right: 150px;
 
-    overflow: scroll;
 
     display: block;
     max-height: 100%;
     max-width: 100%;
     height: auto;
     width: auto;
-    padding: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+
 }
 
 #class1\.priceTag, #class2\.priceTag, #class3\.priceTag, #class4\.priceTag, #class5\.priceTag {
