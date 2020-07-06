@@ -1,0 +1,139 @@
+body{
+    background-image: linear-gradient(to left , lightskyblue, lightsteelblue);
+
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+    text-wrap: normal;
+    word-wrap: break-word;
+    margin: 120px;
+}
+
+#class0 {
+    background-color: white;
+    position: relative;
+    padding: 70px 50px 10px 50px;
+}
+
+
+h2 {
+    position: absolute;
+    top: 5px;
+    left: 35px;
+
+}
+
+h3 {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+
+#class1, #class2 {
+    background-color: rgb(242, 242, 242);
+    border: 1px solid darkgrey;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#class3, #class4, #class5 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid darkgrey;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+
+#class1\.picture, #class2\.picture, #class3\.picture, #class4\.picture, #class5\.picture {
+    float: left;
+    height: 200px;
+    width: 200px;
+}
+
+#class1\.content, #class2\.content, #class3\.content, #class4\.content, #class5\.content {
+    position: absolute;
+    left: 200px;
+    right: 150px;
+    height: 100%;
+    padding: 15px;
+}
+
+#class1\.priceTag, #class2\.priceTag, #class3\.priceTag, #class4\.priceTag, #class5\.priceTag {
+    /*background-color: #fff425;*/
+    position: absolute;
+    left: calc(100% - 150px);
+    height: 100%;
+    width: 150px;
+    padding: 15px;
+}
+
+
+#class1\.fromText, #class2\.fromText, #class3\.fromText, #class4\.fromText, #class5\.fromText {
+    font-weight: 100;
+    font-size: 11px;
+}
+
+
+#class1\.price, #class3\.price {
+    text-decoration: line-through;
+    font-size: 12px;
+    line-height: 1.0;
+}
+
+#class2\.price, #class4\.price{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+#class5\.price {
+    background-color: rgb(192, 47, 42);
+    border-radius: 12px;
+    width: 70%;
+    height: auto;
+    position: relative;
+    right: 30%;
+
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px 10px;
+}
+
+#class1\.view, #class4\.view, #class5\.view {
+    background-color: rgb(246, 171,80);
+    border-radius: 12px;
+    width: 40%;
+    height: 10%;
+
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px 10px;
+}
+
+#class2\.view {
+    background-color: rgb(233, 106,75);
+    border-radius: 12px;
+    width: 40%;
+    height: 10%;
+
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px 10px;
+}
+
+#class3\.view {
+    background-color: rgb(120, 158,84);
+    border-radius: 12px;
+    width: 40%;
+    height: 10%;
+
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px 10px;
+}
