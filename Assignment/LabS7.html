@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab S7</title>
+    <link rel="stylesheet" href="../css/LabS7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawsome/fontawsome/all.css">
+</head>
+<body>
+    <h1>Responsive Checkout Form</h1>
+    <section class="section">
+        <div class="container">
+            <div class="left">
+                <div class="billingAddress">
+                    <h3>Billing Address</h3>
+                    <form class="billing" method="post" action="#">
+                        <label><i class="far fa-id-card"></i> Full Name</label><br/>
+                        <input type="text" name="fullName" placeholder="Van A Ng."/><br/><br/>
+                        <label><i class="fas fa-envelope"></i> Email</label><br/>
+                        <input type="email" name="email" placeholder="abc@email.com"/><br/><br/>
+                        <label><i class="fas fa-map-marker-alt"></i> Address</label><br/>
+                        <input type="text" name="address" placeholder="No.123 ABC str."/><br/><br/>
+                        <label><i class="fas fa-university"></i> City</label><br/>
+                        <input type="text" name="city" placeholder="Phoenix"><br/><br/>
+                        <div class="stateAndZipcode">
+                            <div class="state">
+                                <label>State</label>
+                                <input  type="text" name="state" placeholder="Arizona"/>
+                            </div>
+
+                            <div class="zipcode">
+                                <label>Zip</label>
+                                <input type="number" name="zipcode" placeholder="10001"/>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="payment">
+                    <h3>Payment</h3>
+                    <form class="paymentInfo" method="post" action="#">
+                        <label>Accepted Cards</label><br/>
+                        <div class="cardIcons"><img src="../img/Assignment/LabS7.png"></div>
+                        <label>Name on Card</label><br/>
+                        <input type="text" name="nameOnCard" placeholder="Van A Ng."/><br/><br/>
+                        <label>Credit card number</label><br/>
+                        <input type="number" name="creditCardNumber" placeholder="1111-2222-3333-4444"/><br/><br/>
+                        <label>Exp Month</label><br/>
+                        <input type="month" name="expMonth" placeholder="September"><br/><br/>
+                        <div class="expYearAndCVV">
+                            <div class="expYear">
+                                <label>Exp Year</label>
+                                <input  type="number" name="expYear" placeholder="2018"/>
+                            </div>
+
+                            <div class="CVV">
+                                <label>CVV</label>
+                                <input type="number" name="cvv" placeholder="352"/>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="checkbox-shipping">
+                    <label><input type="checkbox" name="shippingAddress"/>Shipping Address same as billing</label>
+                </div>
+                <button type="submit">Continue to checkout</button>
+            </div>
+            <div class="right">
+                <div id="headerCart"><h3>Cart</h3></div>
+                <div id="headerCartIcon">4 <i class="fas fa-shopping-cart"></i></div>
+                <br/><br/><br/>
+                <div class="product">
+                    <a href="#"><p class="productName">iphone</p></a>
+                    <p class="productPrice">$1500</p>
+                </div><br/>
+                <div class="product">
+                    <a href="#"><p class="productName">samsung</p></a>
+                    <p class="productPrice">$500</p>
+                </div><br/>
+                <div class="product">
+                    <a href="#"><p class="productName">oppo</p></a>
+                    <p class="productPrice">$400</p>
+                </div><br/>
+                <div class="product">
+                    <a href="#"><p class="productName">huawei</p></a>
+                    <p class="productPrice">$200</p>
+                </div><br/><br/>
+                <hr/>
+                <div class="totalPrice">
+                    <p id="left">Total</p>
+                    <p id="right">$2600</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

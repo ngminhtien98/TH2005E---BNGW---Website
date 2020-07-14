@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="Demo-Form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawsome/fontawsome/all.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <form method="post" action="#">
+                
+                <div class="input-group">
+                    <input class="input-text" type="text" name="fullName" placeholder="Full Name" required/>
+                    <input class="input-text" type="email" name="email" placeholder="Enter email here"required/>
+                </div>
+                
+                <div class="input-group">
+                    <input class="input-text" type="password" name="passWord" placeholder="Password"required/>
+                    <input class="input-text" type="number" name="years" placeholder="Year old"required/>
+                </div>
+                
+                <div class="input-group">
+                    <input class="input-text" type="date" name="birthday" placeholder="Birthday"/>
+                </div>
+                
+                <div class="input-group">
+                    <input class="input-text" type="file" name="avatar" placeholder="Input your avatar"/>
+                </div>
+                
+                <div class="input-group">
+                    <label><input type="radio" name="sex" value="male"/>Male</label>
+                    <label><input type="radio" name="sex" value="female"/>Female</label>
+                    <label><input type="radio" name="sex" value="other"/>Other</label>
+                </div>
+                
+                <div>
+                    <label>You wanna marry at the age: </label>
+                    <input id="yearwedding" type="range" min="18" max="99"/>
+                </div>
+                
+                <div>
+                    <label><input type="checkbox" name="rules"/>I agree with the rules</label>
+                </div>
+                
+                <div>
+                    <select name="city">
+                        <option>Please choose your city</option>
+                        <optgroup label="Northern">
+                            <option value="Hanoi">Ha Noi</option>
+                            <option value="Haiphong">Hai Phong</option>
+                        </optgroup>
+                        <optgroup label="Central">
+                            <option value="Danang">Da Nang</option>
+                        </optgroup>
+                        <optgroup label="Southern">
+                            <option value="HCMC">Ho Chi Minh City</option>
+                            <option value="Cantho">Can Tho</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                
+                
+                <textarea name="description" placeholder="Your description" rows="10" cols="100"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

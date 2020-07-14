@@ -1,0 +1,36 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.section {
+    float: left;
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.input-group {
+    float: left;
+    width: 100%;
+    margin: 15px 00px;
+}
+
+.input-text {
+    float: left;
+    width: 45%;
+    height: 35px;
+    margin-right: 10px;
+    color: red;
+}
