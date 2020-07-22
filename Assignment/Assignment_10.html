@@ -9,31 +9,6 @@
 <section class="section">
     <div class="container">
         <div class="categories" id="categories">
-            <div class="product" id="product">
-                <div class="image"><a href="#"><img src="../img/Assignment/Assignment10.1.jpg"/></a></div>
-                <div class="content">
-                    <a href="#" class="graphicCorner" id="graphicCorner">graphic corner</a><br/><br/>
-                    <a href="#" class="productTittle" id="productTittle">fila locker room varsity jacket</a><br/><br/>
-                    <div class="rate" id="rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="price" id="price">Price</div>
-                    <div class="productContent" id="productContent">
-                        Create a cool and sporty look with the FILA® Locker Room Varsity Jacket.
-                        Comfortable cotton-blend fabrication.
-                        Classic varsity jacket features brand details throughout.
-                        Flat knit collar.</div>
-                    <div class="availability" id="availability">
-                        <div class="availability_1" id="availability_1">Availability:</div>
-                        <div class="availability_2" id="availability_2">299 In Stock</div>
-                    </div><br/>
-                    <div class="producFooter" id="producFooter">
-                        <a class="addToCart" id="addToCart" href="#">add to cart</a>
-                        <div class="footerIcons" id="footerIcons">
-                            <i class="fas fa-random"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -208,20 +183,16 @@
     ]
     producList.map(function (e) {
         var inner_HTML = "<div class=\"product\" id=\"product\">\n" +
-            "                <div class=\"image\"><a href=\"#\"><img src=\"../img/Assignment/Assignment10.1.jpg\"/></a></div>\n" +
+            "                <div class=\"image\"><a href=\"#\"><img src=\""+e.image+"\"/></a></div>\n" +
             "                <div class=\"content\">\n" +
             "                    <a href=\"#\" class=\"graphicCorner\" id=\"graphicCorner\">graphic corner</a><br/><br/>\n" +
-            "                    <a href=\"#\" class=\"productTittle\" id=\"productTittle\">fila locker room varsity jacket</a><br/><br/>\n" +
+            "                    <a href=\"#\" class=\"productTittle\" id=\"productTittle\">"+e.title+"</a><br/><br/>\n" +
             "                    <div class=\"rate\" id=\"rate\"><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i></div>\n" +
-            "                    <div class=\"price\" id=\"price\">Price</div>\n" +
-            "                    <div class=\"productContent\" id=\"productContent\">\n" +
-            "                        Create a cool and sporty look with the FILA® Locker Room Varsity Jacket.\n" +
-            "                        Comfortable cotton-blend fabrication.\n" +
-            "                        Classic varsity jacket features brand details throughout.\n" +
-            "                        Flat knit collar.</div>\n" +
+            "                    <div class=\"price\" id=\"price\">"+e.price+"</div>\n" +
+            "                    <div class=\"productContent\" id=\"productContent\">\n"+e.content+"</div>\n" +
             "                    <div class=\"availability\" id=\"availability\">\n" +
             "                        <div class=\"availability_1\" id=\"availability_1\">Availability:</div>\n" +
-            "                        <div class=\"availability_2\" id=\"availability_2\">299 In Stock</div>\n" +
+            "                        <div class=\"availability_2\" id=\"availability_2\">"+e.availability+"</div>\n" +
             "                    </div><br/>\n" +
             "                    <div class=\"producFooter\" id=\"producFooter\">\n" +
             "                        <a class=\"addToCart\" id=\"addToCart\" href=\"#\">add to cart</a>\n" +
