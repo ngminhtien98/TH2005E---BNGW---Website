@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoJS 4</title>
+</head>
+<body>
+    <h1 id="abc">Demo JS with class tag</h1>
+    <p class="pg">Content</p>
+    <p class="pg">Content 2</p>
+
+    <script type="text/javascript">
+        var h = document.getElementById("abc");
+        h.style.textTransform = "uppercase";
+
+        var p = document.getElementsByClassName("pg");
+        for(var i = 0; i < p.length; i++){
+            p[i].style.color = "red";
+        }
+
+        var p2 = document.getElementsByTagName("p")
+        for(var e of p2){
+            e.style.color = "green";
+        }
+
+        var p3 = document.querySelectorAll("p.pg");
+        console.log(p3);
+
+        var p4 = document.querySelectorAll("#abc");
+        console.log(p4);
+
+        var ip = document.querySelectorAll("input[type=text]");
+        var ip2 = document.querySelectorAll("input[name=email]");
+
+        var head = document.head;
+        var body = document.body;
+        var links = document.links;
+
+
+
+
+    </script>
+</body>
+</html>
