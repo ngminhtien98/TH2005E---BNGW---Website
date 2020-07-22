@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Way 1: Embed JS code here
+        //
+        // alert("Trang nay khong danh cho nguoi duoi 18 tuoi");
+        // var v = confirm("Do you want to continue?");
+        // console.log(v);
+        //
+        // var r = Math.random()*100;
+        // r = parseInt(r);
+        // console.log(r);
+        //
+        // while (isNaN(p) || p>100 || p<0) {
+        //     var p = prompt("Input your lucky number (range: 0 to 99): ");
+        //     p = parseInt(p)
+        //     console.log(p);
+        // }
+        // if(p==r){
+        //     alert("Congratulation you on winning the game!");
+        // } else {
+        //     alert("Good luck next time");
+        // }
+
+        // setTimeout(function () {
+        //     alert("Waiting for 3s");
+        // },3000);
+
+       // var stv = setInterval(function f() {
+       //     var r1 = parseInt(Math.random()*6+1);
+       //     var r2 = parseInt(Math.random()*6+1);
+       //     var r3 = parseInt(Math.random()*6+1);
+       //     var r=r1+r2+r3;
+       //     console.log(r);
+       //     while(p!=0 && p!=1){
+       //         var p = prompt("What do you choose? Over (input 1) or Under (input 0)?: ");
+       //         p = parseInt(p)
+       //     }
+       //     if(r<10 && p==0) {
+       //         alert("Congratulation on Winning the price. The result is Under");
+       //         clearInterval(stv);
+       //     } else if(r>9 && p==1) {
+       //         alert("Congratulation on Winning the price. The result is Over")
+       //         clearInterval(stv);
+       //     } else {
+       //         alert("Good Luck Next Time!");
+       //     }
+       // })
+
+        setTimeout(function f() {
+            var r1 = parseInt(Math.random()*6+1);
+            var r2 = parseInt(Math.random()*6+1);
+            var r3 = parseInt(Math.random()*6+1);
+            var r=r1+r2+r3;
+            console.log(r);
+            while(p!=0 && p!=1){
+                var p = prompt("What do you choose? Over (input 1) or Under (input 0)?: ");
+                p = parseInt(p)
+            }
+            if(r<10 && p==0) {
+                alert("Congratulation on Winning the price. The result is Under");
+            } else if(r>9 && p==1) {
+                alert("Congratulation on Winning the price. The result is Over")
+            } else {
+                alert("Good Luck Next Time!");
+            }
+        },3000)
+        // console.log("Hello");
+
+
+
+
+    </script>
+
+
+    <!--    Way 2: Use the Peripheral file (View example bellowed)-->
+    <!--    <script type="text/javascript" src="DemoJS-1.js"></script>-->
+</body>
+</html>

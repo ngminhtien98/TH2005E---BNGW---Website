@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="../css/Assignment_10.css"></head>
+    <link rel="stylesheet" href="../fontawsome/fontawsome/all.css">
+<body>
+<section class="section">
+    <div class="container">
+        <div class="categories" id="categories">
+            <div class="product" id="product">
+                <div class="image"><a href="#"><img src="../img/Assignment/Assignment10.1.jpg"/></a></div>
+                <div class="content">
+                    <a href="#" class="graphicCorner" id="graphicCorner">graphic corner</a><br/><br/>
+                    <a href="#" class="productTittle" id="productTittle">fila locker room varsity jacket</a><br/><br/>
+                    <div class="rate" id="rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="price" id="price">Price</div>
+                    <div class="productContent" id="productContent">
+                        Create a cool and sporty look with the FILA® Locker Room Varsity Jacket.
+                        Comfortable cotton-blend fabrication.
+                        Classic varsity jacket features brand details throughout.
+                        Flat knit collar.</div>
+                    <div class="availability" id="availability">
+                        <div class="availability_1" id="availability_1">Availability:</div>
+                        <div class="availability_2" id="availability_2">299 In Stock</div>
+                    </div><br/>
+                    <div class="producFooter" id="producFooter">
+                        <a class="addToCart" id="addToCart" href="#">add to cart</a>
+                        <div class="footerIcons" id="footerIcons">
+                            <i class="fas fa-random"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    var producList = [
+        {
+            image: "../img/Assignment/Assignment10.1.jpg",
+            title: "fila locker room varsity jacket",
+            price: "€9.90",
+            content: "Create a cool and sporty look with the FILA® Locker Room Varsity Jacket.\n" +
+                "Comfortable cotton-blend fabrication.\n" +
+                "Classic varsity jacket features brand details throughout.\n" +
+                "Flat knit collar.",
+            availability: "299 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.2.jpg",
+            title: "Juicy Couture Tricot Logo Stripe Jacket",
+            price: "€18.90",
+            content: "Freshen up your look with the Juicy Couture™ Tricot Logo Stripe Jacket.\n" +
+                "Polyester fabrication flaunts stripe and brand logo detail at sleeves.\n" +
+                "Stand collar.\n" +
+                "Front-zipper closure.\n" +
+                "100% polyester.",
+            availability: "300 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.3.jpg",
+            title: "New Balance Fresh Foam LAZR V1 Sport",
+            price: "€18.90",
+            content: "The New Balance® Fresh Foam LAZR v1 Sport running shoe gives you total focus on the road with its precision-engineered design.\n" +
+                "Predecessor: None.\n" +
+                "Support Type: Neutral.\n" +
+                "Flat knit collar.\n" +
+                "Cushioning: Minimal feel with extreme flexibility.",
+            availability: "300 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.4.jpg",
+            title: "Juicy Couture Solid Sleeve Puffer Jacket",
+            price: "€18.90",
+            content: "Stay toasty with this Juicy Couture™ Solid Sleeve Puffer Jacket!\n" +
+                "Stand collar.\n" +
+                "Long sleeves.\n" +
+                "100% polyester;\n" +
+                "Lining: 100% polyester;\n" +
+                "Filling: 100% polyester.",
+            availability: "299 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.5.jpg",
+            title: "New Balance Fresh Foam Kaymin",
+            price: "€15.12",
+            content: "Increase your distance with the superior cushioning of the Fresh Foam Kaymin running shoe from New Balance®.\n" +
+                "Predecessor: None.\n" +
+                "Support Type: Neutral.\n" +
+                "Cushioning: High energizing cushioning.",
+            availability: "298 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.6.jpg",
+            title: "Water And Wind Resistant Insulated Jacket",
+            price: "€11.90",
+            content: "Stay ready for a change in weather with the IZOD® Water and Wind Resistant Insulated Jacket.\n" +
+                "Water-resistant jacket keeps you warm and dry.\n" +
+                "Stand collar features an attached hood.\n" +
+                "Front-zip closure.",
+            availability: "291 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.7.jpg",
+            title: "Trans-Weight Hooded Wind And Water Resistant Shell",
+            price: "€11.90",
+            content: "Keep the elements away and warmth priority number one in this Nautica® Trans-Weight Hooded Wind and Water Resistant Shell.\n" +
+                "Hooded collar with a high collar for maximum coverage.\n" +
+                "Long sleeves with banded collars.\n" +
+                "Zip front closure.",
+            availability: "299 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.8.jpg",
+            title: "Madden By Steve Madden Cale 6",
+            price: "€10.12",
+            content: "No one can deny your sleek style with these handsome Madden by Steve Madden® Cale 6 oxfords.\n" +
+                "Man-made upper features a plain toe.\n" +
+                "Lace-up closure.\n" +
+                "Man-made lining.",
+            availability: "299 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.9.jpg",
+            title: "Calvin Klein Jeans Reflective Logo Full Zip",
+            price: "€29.00",
+            content: "Calvin Klein® Jeans hoodie with reflective logo detailing at the sleeves.\n" +
+                "Sweatshirt crafted in a soft-knit fabric for superior comfort.\n" +
+                "Drawstring hood.\n" +
+                "Long sleeves.\n" +
+                "Full-zip front.",
+            availability: "300 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.10.jpg",
+            title: "New Balance Arishi Sport V1",
+            price: "€29.00",
+            content: "Break old records and make new goals in the New Balance® Arishi Sport v1.\n" +
+                "Predecessor: None.\n" +
+                "Support Type: Neutral.\n" +
+                "Cushioning: High energizing cushioning.",
+            availability: "899 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.11.jpg",
+            title: "Brixton Patrol All Terrain Anorak Jacket",
+            price: "€29.00",
+            content: "Whether you're exploring the woods or the city, the Brixton™ Patrol All Terrain Anorak Jacket has got you covered.\n" +
+                "Camo jacket crafted from 4.5 oz nylon ripstop with two-way stretch, and a water-repellent coating.\n" +
+                "Drawstring hood.",
+            availability: "899 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.12.jpg",
+            title: "Juicy Couture Juicy Quilted Terry Track Jacket",
+            price: "€34.12",
+            content: "Score extra points when it comes to your sporty look with the Juicy Couture™ Juicy Quilted Terry Track Jacket.\n" +
+                "Soft terry construction in a quilted design.\n" +
+                "Front zipper closure.\n" +
+                "61% cotton, 39% polyester;\n" +
+                "Lining: 58% cotton, 42% polyester.",
+            availability: "1189 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.13.jpg",
+            title: "Originals Kaval Windbreaker Winter Jacket",
+            price: "€21.51",
+            content: "Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket.\n" +
+                "Part of the Kaval Collection.\n" +
+                "Regular fit is eased, but not sloppy, and perfect for any activity.\n" +
+                "Plain-woven jacket specifically constructed for freedom of movement.",
+            availability: "299 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.14.jpg",
+            title: "New Luxury Men's Slim Fit Shirt Short Sleeve...",
+            price: "€29.00",
+            content: "Break old records and make new goals in the New Balance® Arishi Sport v1.\n" +
+                "Predecessor: None.\n" +
+                "Support Type: Neutral.\n" +
+                "Cushioning: High energizing cushioning.",
+            availability: "397 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.15.jpg",
+            title: "Brixton Patrol All Terrain Anorak Jacket 2",
+            price: "€29.00",
+            content: "Whether you're exploring the woods or the city, the Brixton™ Patrol All Terrain Anorak Jacket has got you covered.\n" +
+                "Camo jacket crafted from 4.5 oz nylon ripstop with two-way stretch, and a water-repellent coating.\n" +
+                "Drawstring hood.",
+            availability: "400 In Stock"
+        },
+        {
+            image: "../img/Assignment/Assignment10.16.jpg",
+            title: "Juicy Couture Juicy Quilted Terry Track Jacket 2",
+            price: "€34.11",
+            content: "Score extra points when it comes to your sporty look with the Juicy Couture™ Juicy Quilted Terry Track Jacket.\n" +
+                "Soft terry construction in a quilted design.\n" +
+                "Front zipper closure.\n" +
+                "61% cotton, 39% polyester;\n" +
+                "Lining: 58% cotton, 42% polyester.",
+            availability: "199 In Stock"
+        }
+    ]
+    producList.map(function (e) {
+        var inner_HTML = "<div class=\"product\" id=\"product\">\n" +
+            "                <div class=\"image\"><a href=\"#\"><img src=\"../img/Assignment/Assignment10.1.jpg\"/></a></div>\n" +
+            "                <div class=\"content\">\n" +
+            "                    <a href=\"#\" class=\"graphicCorner\" id=\"graphicCorner\">graphic corner</a><br/><br/>\n" +
+            "                    <a href=\"#\" class=\"productTittle\" id=\"productTittle\">fila locker room varsity jacket</a><br/><br/>\n" +
+            "                    <div class=\"rate\" id=\"rate\"><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i><i class=\"fas fa-star\"></i></div>\n" +
+            "                    <div class=\"price\" id=\"price\">Price</div>\n" +
+            "                    <div class=\"productContent\" id=\"productContent\">\n" +
+            "                        Create a cool and sporty look with the FILA® Locker Room Varsity Jacket.\n" +
+            "                        Comfortable cotton-blend fabrication.\n" +
+            "                        Classic varsity jacket features brand details throughout.\n" +
+            "                        Flat knit collar.</div>\n" +
+            "                    <div class=\"availability\" id=\"availability\">\n" +
+            "                        <div class=\"availability_1\" id=\"availability_1\">Availability:</div>\n" +
+            "                        <div class=\"availability_2\" id=\"availability_2\">299 In Stock</div>\n" +
+            "                    </div><br/>\n" +
+            "                    <div class=\"producFooter\" id=\"producFooter\">\n" +
+            "                        <a class=\"addToCart\" id=\"addToCart\" href=\"#\">add to cart</a>\n" +
+            "                        <div class=\"footerIcons\" id=\"footerIcons\">\n" +
+            "                            <i class=\"fas fa-random\"></i>\n" +
+            "                            <i class=\"far fa-heart\"></i>\n" +
+            "                        </div>\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "            </div>"
+        document.getElementById("categories").innerHTML += inner_HTML;
+    })
+</script>
+</body>
+</html>

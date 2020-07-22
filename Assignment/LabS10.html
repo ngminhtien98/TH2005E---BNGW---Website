@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab S10</title>
+    <link rel="stylesheet" href="../css/LabS10.css">
+</head>
+<body>
+    <section class = "section">
+        <div class="categories">
+            <div id="container"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        var cats = [
+            {
+                name: "Smartphone",
+                image: "img/Assignment/LabS10.1.png",
+                link: "#"
+            },
+            {
+                name: "Laptop",
+                image: "img/Assignment/LabS10.2.png",
+                link: "#"
+            },
+            {
+                name: "Apple",
+                image: "img/Assignment/LabS10.3.png",
+                link: "#"
+            },
+            {
+                name: "Tablet",
+                image: "img/Assignment/LabS10.4.png",
+                link: "#"
+            },
+            {
+                name: "Smartwatch",
+                image: "img/Assignment/LabS10.5.png",
+                link: "#"
+            },
+            {
+                name: "Case",
+                image: "img/Assignment/LabS10.6.png",
+                link: "#"
+            },
+            {
+                name: "Headphone",
+                image: "img/Assignment/LabS10.7.png",
+                link: "#"
+            },
+            {
+                name: "MemoryCard",
+                image: "img/Assignment/LabS10.8.png",
+                link: "#"
+            },
+            {
+                name: "Speaker",
+                image: "img/Assignment/LabS10.9.png",
+                link: "#"
+            },
+            {
+                name: "ChargingCable",
+                image: "img/Assignment/LabS10.10.png",
+                link: "#"
+            },
+            {
+                name: "Computer",
+                image: "img/Assignment/LabS10.11.png",
+                link: "#"
+            },
+            {
+                name: "Printer",
+                image: "img/Assignment/LabS10.12.png",
+                link: "#"
+            }
+        ];
+
+        cats.map(function (e) {
+            var container_html = "<a href=" + "'" + e.link + "'>" + "<div class='product'>"
+                + "<div class='itemImg'><img src=" + "'" + "../" + e.image +"'/>" + "</div>"
+                + "<div class='itemName'>" + e.name + "</div>" + "</a"
+            document.getElementById("container").innerHTML += container_html;
+        })
+
+    </script>
+
+</body>
+</html>
