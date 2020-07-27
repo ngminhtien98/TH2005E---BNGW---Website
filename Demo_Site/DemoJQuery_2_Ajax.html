@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery 2 - ajax</title>
+</head>
+<body>
+    <section>
+
+        <div class="container">
+            <div class="formClient">
+                <p>Choose your city: </p>
+                <input type="text" name="cityName" placeholder="Saigon"/>,
+                <input type="text" name="countryName" placeholder="vn"/>
+                <button type="button" onclick="inputLocation()">OK</button>
+            </div>
+            <div class="info" style="display: none">
+                <h1>City, Country</h1>
+                <table>
+                    <h2 class="temp">Temperature</h2>
+                    <h3 class="min">Min:</h3>
+                    <h3 class="max">Max:</h3>
+                    <h3 class="press">Pressure:</h3>
+                    <h3 class="humidity">Humidity:</h3>
+                    <h3 class="description">Weather Description: </h3>
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="DemoJQuery-1.js"></script>
+    <script type="text/javascript">
+        function inputLocation() {
+            var city= $("input[name=cityName]").val();
+            var country= $("input[name=countryName]").val();
+            var cityCountry = city + "," + country;
+            console.log(cityCountry);
+            $(".info").css("display","block");
+            $.ajax({
+                url: "http://api.openweathermap.org/data/2.5/weather",
+                method: "get",
+                data: {
+                    q : cityCountry,
+                    appid:"09a71427c59d38d6a34f89b47d75975c",
+                    units:"metric"
+                },
+                //the command actived when url bellow loading successfully:
+                success: (rs) => {
+                    $("h1").text(rs.name + ' ' + rs.sys.country);
+                    $(".temp").html("Temperature: " + rs.main.temp + "<sup>o</sup>C");
+                    $(".min").html("Minimum Temperature: " + rs.main.temp_min + "<sup>o</sup>C");
+                    $(".max").html("Maximum Temperature: " + rs.main.temp_max + "<sup>o</sup>C");
+                    $(".press").text("Pressure: " +rs.main.pressure);
+                    $(".humidity").text("Humidity: " +rs.main.humidity);
+                    for (var i of rs.weather){
+                        $(".description").append(i.description)
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

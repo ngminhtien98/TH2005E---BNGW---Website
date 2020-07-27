@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 13</title>
+    <link rel="stylesheet" href="../css/Assignment_13.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawsome/fontawsome/all.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            </div>
+    </section>
+    <script type="text/javascript" src="../Demo_Site/DemoJQuery-1.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+            method:"get",
+            data: {
+                q: "Hanoi,vietnam",
+                appit: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric"
+            },
+            success: (rs) => {
+                for (var i of rs.list){
+                    $(".container").append(
+                        "<div class=\"box\">\n" +
+                        "                <div class=\"content\">\n" +
+                        "                    <p class=\"dateTime\">"+i.dt_txt+"</p>\n" +
+                        "                    <div class=\"tempInfo\">\n" +
+                        "                        <div class=\"temp\">"+i.main.temp + "<sup>o</sup>C"+"</div>\n" +
+                        "                        <div class=\"img\"><img src=\"../img/Assignment/Assignment13.1.png\"/></div>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"description\"></div>\n" +
+                        "                </div>\n" +
+                        "            </div>"
+                    )
+                }
+                for (var j of i.weather) {
+                    $(".description").append(j.description)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
