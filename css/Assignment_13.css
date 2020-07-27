@@ -26,6 +26,7 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     height: auto;
+    /*height: 175px;*/
     background-color: rgba(160, 176, 189, 0.44);
     border: 1px solid rgb(50,120,144)
 ;
@@ -35,25 +36,22 @@ body {
     float: left;
     padding: 15px;
     width: 100%;
-    height: auto;
 }
 
 .dateTime {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .tempInfo {
     float: left;
     width: 100%;
-    height: auto;
-    margin-bottom: 25px;
+    height: 70px;
 }
 
 .temp {
     float: left;
     width: 50%;
-    padding-top: 30px;
     font-size: 27px;
     text-align: left;
 }
@@ -64,11 +62,16 @@ body {
     text-align: center;
 }
 
+.img img {
+    position: relative;
+    top: -30px;
+    right: -15px;
+}
+
 .description {
+    float: left;
     font-size: 20px;
     font-weight: 200;
-    float: left;
     width: 100%;
-    margin-bottom: 10px;
     text-transform: lowercase;
 }
