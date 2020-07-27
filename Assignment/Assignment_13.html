@@ -13,14 +13,13 @@
     </section>
     <script type="text/javascript">
         $.ajax({
-            // url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
-            url:"http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=7a6c13aee15e60667f8e6f3b1d1a28cc&units=metric",
+            url:"http://api.openweathermap.org/data/2.5/forecast",
             method:"get",
-            // data: {
-            //     q: "Hanoi,",
-            //     appid: "09a71427c59d38d6a34f89b47d75975c",
-            //     units: "metric"
-            // },
+            data: {
+                q: "Hanoi,",
+                appid: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric"
+            },
             success: (rs) => {
                 for (var i of rs.list){
                     var imageUrl = "../img/Assignment/Assignment13.2.png";
