@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="../css/Assignment_12.css">
+
+
+
+</head>
+<body>
+    <script type="text/javascript" src="../JS/Assignment_12.js"></script>
+    <script type="text/javascript">
+        var action = setInterval(function(){
+            var d=new Date();
+            // console.log(d)
+            var s=d.getSeconds();
+            // console.log(s)
+            var m=d.getMinutes();
+            // console.log(m)
+            var h=d.getHours();
+            // console.log(h)
+
+
+            var s_deg=s*6;
+            var m_deg=(m+s/60)*6;
+            var h_deg=(h+m/60)*30;
+
+            $("#second").css('transform','rotate(' + s_deg + 'deg)');
+            $("#minute").css('transform','rotate(' + m_deg + 'deg)');
+            $("#hour").css('transform','rotate(' + h_deg + 'deg)');
+        },1000);
+    </script>
+
+    <script type="text/javascript">
+
+        var action_2 = setInterval(function () {
+            var d=new Date();
+            var s=d.getSeconds();
+            var m=d.getMinutes();
+            var h=d.getHours();
+
+            $("#digH").text(h);
+            $("#digM").text(m<10?"0"+m:m);
+            $("#digS").text(s<10?"0"+s:s);
+
+        },1000);
+
+    </script>
+
+
+    <div id="clockBackground">
+        <div id="clock">
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        </div>
+        <div id="timeInfo">
+            <p id="textInfo"><b>The time is: </b> <span id="digH"></span>:<span id="digM"></span>:<span id="digS"></span>
+            </p>
+        </div>
+    </div>
+
+S
+
+</body>
+</html>

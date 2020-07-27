@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JQuery 1</title>
+</head>
+<body>
+    <input type="number" name="minute" onclick="move()"/><br/>
+    <button type="button" onclick="boxOn()">ON</button>
+    <button type="button" onclick="boxOff()">OFF</button>
+    <button type="button" onclick="onOff()">Toggle</button>
+    <button type="button" onclick="move()">Move</button>
+
+    <div class ="box">
+        <h1 id="heading">jQuery title</h1>
+        <h2>Author</h2>
+    </div>
+
+    <script type="text/javascript" src="DemoJQuery-1.js"></script>
+    <script type="text/javascript">
+        var h = $("#heading");
+        h.css("color","red");
+        h.css({
+            "color":"green",
+            "background-color":"pink",
+            "border":"1px solid grey"
+        });
+        console.log(h.text())
+        h.text("Hello");
+        console.log(h.text());
+        console.log(h.html());
+        h.html("<i>Hello</i>");
+        h.html(h.html() + "<b>123</b>");
+        console.log(h.text());
+
+        //class
+
+        var pg = $(".pg");
+        pg.css("color", "orange");
+        var pp = $("p");
+        pp.css("text-tranform","uppercase");
+    </script>
+    <script type="text/javascript">
+        function boxOn() {
+            var box = $(".box");
+            box.show();
+        }
+        function boxOff() {
+            var box = $(".box");
+            box.hide();
+        }
+
+        function onOff() {
+            var box = $(".box");
+            box.toggle();
+            box.fadeToggle();
+            box.slideToggle();
+        }
+        // var m =0;
+        // function move() {
+        //     var box = $(".box");
+        //     m++;
+        //     box.animate({
+        //         "margin-left": m*20 + "px"
+        //     },400)
+        // }
+        function move() {
+            var box = $(".box");
+            var m = $("input[name=minute]").val();
+            m = parseInt(m);
+            m = isNaN(m)?0:m;
+            box.animate({
+                "margin-left": m+ "px",
+                "margin-top": m+ "px"
+            },400)
+        }
+
+
+    </script>
+</body>
+</html>

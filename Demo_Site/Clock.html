@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+</head>
+<body>
+    <input type="number" name="minute"/><br/>
+    <button type="button" onclick="inputMin()">OK</button>
+    <h1><span class="min">00</span>:<span class="sec">00</span></h1>
+    <script type="text/javascript" src="DemoJQuery-1.js"></script>
+    <script type="text/javascript">
+
+        var min=0;
+        var sec=0;
+
+        function inputMin() {
+            var min= $("input[name=minute]").val();
+            min=parseInt(min);
+            if(!isNaN(min) && min >=0){
+                var timer = setInterval(function () {
+                    $(".min").text(min<10?"0"+min:min);
+                    $(".sec").text(sec<10?"0"+sec:sec);
+                    sec--;
+                    if(sec<0){
+                        min--;
+                        sec = 59;
+                    }
+                    if(min < 0) clearInterval(timer);
+                },1000)
+            } else {
+                alert("Input a number of minute (equal or larger than 0)");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

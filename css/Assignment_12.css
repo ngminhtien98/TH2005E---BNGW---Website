@@ -1,0 +1,35 @@
+#clockBackground {
+    overflow: hidden;
+    height: 480px;
+    width: 480px;
+    margin: 200px auto;
+}
+
+#clockBackground #clock,#hour,#minute,#second{
+    position: absolute;
+    height: 480px;
+    width: 480px;
+}
+
+#clock {
+    background: url(../img/Assignment/Assignment12_1.png) no-repeat center;}
+
+#hour {
+    background: url(../img/Assignment/Assignment12_2.png) no-repeat center;}
+
+#minute {
+    background: url(../img/Assignment/Assignment12_3.png) no-repeat center;}
+
+#second {
+    background: url(../img/Assignment/Assignment12_4.png) no-repeat center;}
+
+#timeInfo {
+    width: 100px;
+    height: auto;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+#digH,#digM,#digS {
+    font-weight: bold;
+}

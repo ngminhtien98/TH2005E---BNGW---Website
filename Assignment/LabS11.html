@@ -2,65 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab S11</title>
-    <link rel="stylesheet" href="../css/LabS11.css">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="../css/LabS11.css"/>
 </head>
 <body>
-    <section class="section">
-        <div class="contentContainer">
-            <div class="navigation">
-                <button class="box acive" id="home" type="button" onclick="choosen(this)">Home</button>
-                <button class="box" id="profile" type="button" onclick="choosen(this)">Profile</button>
-                <button class="box" id="messages" type="button" onclick="choosen(this)">Messages</button>
-                <button class="box" id="settings" type="button" onclick="choosen(this)">Settings</button>
+<section class="section">
+    <div class="container">
+        <ul class="nav">
+            <li><a href="#" onclick="tabs(this,'home')" class="item active">Home</a></li>
+            <li><a href="#" onclick="tabs(this,'profile')" class="item">Profile</a></li>
+            <li><a href="#" onclick="tabs(this,'messages')" class="item">Messages</a></li>
+            <li><a href="#" onclick="tabs(this,'setting')" class="item">Setting</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab active">
+                Home
+            </div>
+            <div id="profile" class="tab">
+                Profile
+            </div>
+            <div id="messages" class="tab">
+                Message
+            </div>
+            <div id="setting" class="tab">
+                Setting
             </div>
         </div>
-
-        <div class="contentContainer">
-            <div class="contentHolder">
-                <div class="content" id="homeContent">
-                    <p>This is Home Content</p>
-                </div>
-                <div class="content" id="profileContent">
-                    <p>This is Profile Content</p>
-                </div>
-                <div class="content" id="messagesContent">
-                    <p>This is Messages Content</p>
-                </div>
-                <div class="content" id="settingsContent">
-                    <p>This is Settings Content</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <script type="text/javascript">
-
-        var buttons = document.getElementsByClassName("box");
-        var contents = document.getElementsByClassName("content");
-
-        function showContent(id){
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = "none";
-            }
-            var content = document.getElementById(id);
-            content.style.display = "block";
+    </div>
+</section>
+<script type="text/javascript">
+    function tabs(e,idName) {
+        var li = document.getElementsByClassName("item");
+        var content = document.getElementsByClassName("tab");
+        for(var i of li){
+            i.classList.remove("active");
         }
-        function choosen(e) {
-            var id_1 = e.id;
-            var id = id_1 + "Content";
-            console.log(id);
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("active");
-            }
-            e.classList.add("active");
-            console.log(e.className);
-            showContent(id);
+        for(var i of content){
+            i.classList.remove("active");
         }
-        showContent("homeContent");
-
-    </script>
-
+        e.classList.add("active");
+        document.getElementById(idName).classList.add("active");
+    }
+</script>
 </body>
 </html>
