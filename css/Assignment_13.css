@@ -28,10 +28,9 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     height: auto;
-    /*height: 175px;*/
     background-color: rgba(160, 176, 189, 0.44);
-    border: 1px solid rgb(50,120,144)
-;
+    border: 1px solid rgb(50,120,144);
+    border-radius: 5px;
 }
 
 .content {
