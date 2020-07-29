@@ -22,22 +22,13 @@
             },
             success: (rs) => {
                 for (var i of rs.list){
-                    var imageUrl = "../img/Assignment/Assignment13.2.png";
-                    var desText = i.weather[0].description;
-                    if(desText === "light rain")
-                        imageUrl = "../img/Assignment/Assignment13.3.png";
-                    else if(desText === "overcast clouds")
-                        imageUrl = "../img/Assignment/Assignment13.1.png";
-                    else
-                        imageUrl === imageUrl;
-                    console.log(imageUrl);
                     $(".container").append(`
                     <div class="box">
                         <div class="content">
                                 <p class="dateTime"> ${i.dt_txt} </p>
                                 <div class="tempInfo">
                                     <div class="temp">${i.main.temp}<sup>o</sup>C</div>
-                                    <div class="img"><img src=${imageUrl}></div>
+                                    <div class="img"><img src="https://openweathermap.org/img/wn/${i.weather[0].icon}@2x.png"></div>
                                 </div>
                                 <div class="description">${i.weather[0].description}</div>
                         </div>
