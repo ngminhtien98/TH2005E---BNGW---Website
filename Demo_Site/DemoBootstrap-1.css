@@ -1,0 +1,10 @@
+.a{
+    float: left;
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 100%;
+    background-color: red;
+}
