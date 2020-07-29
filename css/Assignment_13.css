@@ -8,7 +8,9 @@ body {
     font-size: 14px;
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: rgb(50, 100, 128);
+    background-image: url("../img/background/Assignment13.jpg");
+    background-size: cover;
+
 }
 .section {
     float: left;
