@@ -16,7 +16,13 @@
     <script type="text/javascript" src="../JS/Assignment_14.js"></script>
     <script type="text/javascript">
         $.ajax({
-            url:"https://api.openweathermap.org/data/2.5/onecall?lat=21.03&lon=105.77&&units=metric&appid=09a71427c59d38d6a34f89b47d75975c",
+            url:"https://api.openweathermap.org/data/2.5/onecall",
+            data: {
+                lat: "21.03",
+                lon: "105.77",
+                units: "metric",
+                appid: "09a71427c59d38d6a34f89b47d75975c"
+            },
             method:"GET",
             success: (rs)=> {
                 $(".row").append(`
