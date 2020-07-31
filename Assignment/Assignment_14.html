@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 14</title>
+    <link rel="stylesheet" href="../css/Assignment_14.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="row" id="weather">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="../JS/Assignment_14.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url:"https://api.openweathermap.org/data/2.5/onecall?lat=21.03&lon=105.77&&units=metric&appid=09a71427c59d38d6a34f89b47d75975c",
+            method:"GET",
+            success: (rs)=> {
+                $(".row").append(`
+                     <div class="col-md-12">
+                        <div class="box_current">
+                            <div class="content">
+                                    <p class="dateTime"> Current: ${rs.current.dt} </p>
+                                    <div class="tempInfo_current">
+                                        <div class="temp_current">${rs.current.temp}<sup>o</sup>C</div>
+                                        <div class="img_current"><img src="https://openweathermap.org/img/wn/${rs.current.weather[0].icon}@2x.png"></div>
+                                    </div>
+                                    <div class="description">${rs.current.weather[0].description}</div>
+                            </div>
+                        </div>
+                     </div>`
+                )
+                for (var i of rs.daily){
+                    $(".row").append(`
+                     <div class="col-md-3">
+                        <div class="box">
+                            <div class="content">
+                                    <p class="dateTime"> Date Time: ${i.dt} </p>
+                                    <div class="tempInfo">
+                                        <div class="temp">${i.temp.day}<sup>o</sup>C</div>
+                                        <div class="img"><img src="https://openweathermap.org/img/wn/${i.weather[0].icon}@2x.png"></div>
+                                    </div>
+                                    <div class="description">${i.weather[0].description}</div>
+                            </div>
+                        </div>
+                     </div>`)
+                }
+            }
+        })
+    </script>
+
+
+</body>
+</html>
