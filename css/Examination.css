@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: black;
+}
+
+.container1 {
+    float: left;
+    width: 768px;
+    background-image: url("../img/Examnination/menu.jpg");
+    height: 117px;
+
+}
+.container1 {
+    width: 768px;
+    height: 117px;
+    padding: calc(5% - 14px);
+    position: absolute;
+}
+
+.header2 {
+    position: relative;
+    bottom: 30px;
+    float: right;
+    width: 70%;
+    text-align: center;
+
+}
+
+.header2 .headerLink {
+    color: rgb(206,200,157);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.header2 a:hover {
+    text-decoration: none;
+}
+
+.nameTag1 {
+    text-transform: capitalize ;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    left: 270px;
+    top: 22px;
+}
+
+.nameTag2 {
+    text-transform: capitalize ;
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+
+}
+
+.container2 {
+    margin-top: 117px;
+    float: left;
+    background-image: url("../img/Examnination/main_bg.gif");
+    width: 768px;
+    height: 1000px;
+}
+
+.left {
+    float: left;
+    width: calc(100% - 248px);
+}
+
+.leftContent {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.leftContent a {
+    color: black;
+}
+
+.right {
+    float: left;
+    width: 248px;
+}

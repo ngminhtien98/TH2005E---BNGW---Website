@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Bootstrap 2</title>
+    <link rel="stylesheet" href="../lib/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/nivoSlider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../lib/nivoSlider/nivo-slider.css" type="text/css" media="screen" />
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown trigger
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Messages</li>
+        <li>Setting</li>
+    </ul>
+</div>
+
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">...</div>
+        <div role="tabpanel" class="tab-pane" id="profile">...</div>
+        <div role="tabpanel" class="tab-pane" id="messages">...</div>
+        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+    </div>
+
+</div>
+
+<!--    <section class="section">-->
+<!--        <div class="container theme-default">-->
+<!--            <div id="slider" class="nivoSlider">-->
+<!--                <img src="../img/Assignment/Assignment10.1.jpg" data-thumb="images/toystory.jpg" alt="" />-->
+<!--                <img src="../img/Assignment/Assignment10.2.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" />-->
+<!--                <img src="../img/Assignment/Assignment10.3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />-->
+<!--                <img src="../img/Assignment/Assignment10.4.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map" style="width: 800px; height: 400px"></div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: 21.0286145, lng: 105.782093};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map, label:{
+                    text:"Class T2005E",
+                    color:"green"
+                }});
+        }
+    </script>
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap">
+    </script>
+
+
+
+    <script type="text/javascript" src="DemoJQuery-1.js"></script>
+    <script type="text/javascript" src="../lib/Bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../lib/nivoSlider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">$('#slider').nivoSlider();</script>
+</body>
+</html>
